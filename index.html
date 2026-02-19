@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>恵方巻きディスカッション！｜具材で選ぶ「僕らの居場所」</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --sushi-red: #d90429;
+            --sushi-black: #2b2d42;
+            --sushi-yellow: #ffb703;
+            --rice-white: #f8f9fa;
+        }
+        body { font-family: 'Hiragino Maru Gothic ProN', 'Yu Gothic', sans-serif; background-color: var(--rice-white); color: var(--sushi-black); margin: 0; line-height: 1.6; }
+        header { background: var(--sushi-red); color: white; padding: 4rem 1rem; text-align: center; clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); }
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem 1.5rem; }
+        
+        /* 具材セクション */
+        .section-title { text-align: center; font-size: 1.8rem; margin: 3rem 0 2rem; color: var(--sushi-red); position: relative; }
+        .section-title::after { content: ''; display: block; width: 60px; height: 4px; background: var(--sushi-yellow); margin: 10px auto; }
+        
+        .ingredient-card { background: white; border-radius: 20px; overflow: hidden; margin-bottom: 2.5rem; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border: 1px solid #eee; }
+        .ingredient-img { width: 100%; height: 220px; object-fit: cover; }
+        .ingredient-info { padding: 1.5rem; border-top: 5px solid var(--sushi-yellow); }
+        .ingredient-tag { background: var(--sushi-black); color: white; padding: 4px 12px; border-radius: 4px; font-weight: bold; font-size: 0.85rem; margin-bottom: 10px; display: inline-block; }
+        
+        /* 大喜利セクション */
+        .oogiri-box { background: white; border: 5px solid var(--sushi-red); border-radius: 25px; padding: 2.5rem; text-align: center; margin: 2rem 0; position: relative; box-shadow: 0 15px 40px rgba(217, 4, 41, 0.15); }
+        .oogiri-q { font-size: 1.5rem; font-weight: bold; color: var(--sushi-red); margin-bottom: 2rem; min-height: 80px; display: flex; align-items: center; justify-content: center; }
+        .btn-roulette { background: var(--sushi-red); color: white; border: none; padding: 15px 40px; border-radius: 50px; font-size: 1.2rem; cursor: pointer; transition: 0.3s; font-weight: bold; box-shadow: 0 4px 0 #900; }
+        .btn-roulette:active { transform: translateY(4px); box-shadow: none; }
+
+        footer { text-align: center; padding: 4rem 2rem; background: #eee; margin-top: 4rem; color: #666; }
+        .btn-postit { display: inline-block; margin-top: 1rem; color: #d90429; font-weight: bold; text-decoration: none; border-bottom: 2px solid; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🍣 恵方巻き×居場所会議</h1>
+    <p>今夜、理想の「場」を力いっぱい巻き上げろ！</p>
+</header>
+
+<div class="container">
+    
+    <h2 class="section-title">拠点を具材で解剖する</h2>
+
+    <div class="ingredient-card">
+        <img src="southern-gaku.jpg" alt="サザンガク" class="ingredient-img">
+        <div class="ingredient-info">
+            <span class="ingredient-tag">具：ピリ辛キムチ</span>
+            <h3>サザンガク</h3>
+            <p>脳を刺激するカプサイシン！新しい挑戦や出会いがガツンとくる、イベント満載のエネルギッシュな拠点です！</p>
+        </div>
+    </div>
+
+    <div class="ingredient-card">
+        <img src="wakamono-sankaku.jpg" alt="若者参画課" class="ingredient-img">
+        <div class="ingredient-info">
+            <span class="ingredient-tag">具：ぷりぷり海老</span>
+            <h3>若者参画課</h3>
+            <p>松本の街を背負うメインディッシュ！君の「やりたい」を形にするための、最強のバックアップとリソースが詰まっています！</p>
+        </div>
+    </div>
+
+    <div class="ingredient-card">
+        <img src="tankyu-lab.jpg" alt="KOKOラボ" class="ingredient-img">
+        <div class="ingredient-info">
+            <span class="ingredient-tag">具：ねばねば納豆</span>
+            <h3>KOKOラボ</h3>
+            <p>混ぜれば混ぜるほど（話せば話すほど）味が出る！学校でも家でもない、独特の距離感と粘り強い繋がりが生まれる秘密基地です！</p>
+        </div>
+    </div>
+
+    <div class="ingredient-card">
+        <img src="sweetwork.jpg" alt="スイートワーク" class="ingredient-img">
+        <div class="ingredient-info">
+            <span class="ingredient-tag">具：とろ〜りクリームチーズ</span>
+            <h3>スイートワーク</h3>
+            <p>パンの香りに包まれる至福のコク！どんな尖った意見もまろやかに受け止めてくれる、アットホームで開放的な交流拠点です！</p>
+        </div>
+    </div>
+
+    <h2 class="section-title">場作りハック大喜利</h2>
+    <div class="oogiri-box">
+        <div id="oogiri-display" class="oogiri-q">ボタンを叩いて、本音を爆発させろ！</div>
+        <button class="btn-roulette" onclick="spinRoulette()">次のお題を出す！</button>
+        <p><a href="#" class="btn-postit">面白い回答はポストイットへ！📝</a></p>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 若者交流の場づくりプロジェクト</p>
+    <p style="font-size: 0.8rem;">信州大学 繊維学部 某プロジェクトチーム 監修</p>
+</footer>
+
+<script>
+    const questions = [
+        "入館料が「スマホ没収」。それなのに若者が殺到！中で行われている『最高の交流』とは？",
+        "「大人の意見は完全スルーOK」の部屋。若者たちがコッソリ進めている『ヤバい計画』は？",
+        "入口で「自分の黒歴史」バッジを装着するルール。なぜか会話が爆発する、その理由は？",
+        "24時間「寝るだけ」でも怒られない、だらしない場所。そこで生まれた『ガチのアイデア』とは？",
+        "市役所に設置された『叫びの壺』。若者の不満が爆発して、ついに完成した『理想の機能』は？",
+        "「一流のプロだけが入れる場所」ではなく、「一流の失敗談を持つ人だけが入れる場所」。そこで何が起きた？",
+        "恵方巻きの具材に『今の街に足りない要素』を1つ足すなら？（例：爆速Wi-Fi、深夜まで開いてる扉…）"
+    ];
+
+    function spinRoulette() {
+        const display = document.getElementById('oogiri-display');
+        const randomIndex = Math.floor(Math.random() * questions.length);
+        display.style.opacity = 0;
+        setTimeout(() => {
+            display.innerText = questions[randomIndex];
+            display.style.opacity = 1;
+        }, 200);
+    }
+</script>
+
+</body>
+</html>
