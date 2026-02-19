@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>恵方巻きディスカッション！｜具材で選ぶ「僕らの居場所」</title>
+    <title>若者交流拠点ガイド｜松本・居場所会議</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root {
@@ -12,99 +12,94 @@
             --sushi-yellow: #ffb703;
             --rice-white: #f8f9fa;
         }
-        body { font-family: 'Hiragino Maru Gothic ProN', 'Yu Gothic', sans-serif; background-color: var(--rice-white); color: var(--sushi-black); margin: 0; line-height: 1.6; }
+        body { font-family: 'Hiragino Maru Gothic ProN', 'Yu Gothic', sans-serif; background-color: var(--rice-white); color: var(--sushi-black); margin: 0; line-height: 1.8; }
         header { background: var(--sushi-red); color: white; padding: 4rem 1rem; text-align: center; clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); }
-        .container { max-width: 800px; margin: 0 auto; padding: 2rem 1.5rem; }
+        .container { max-width: 850px; margin: 0 auto; padding: 2rem 1.5rem; }
         
-        /* 具材セクション */
         .section-title { text-align: center; font-size: 1.8rem; margin: 3rem 0 2rem; color: var(--sushi-red); position: relative; }
         .section-title::after { content: ''; display: block; width: 60px; height: 4px; background: var(--sushi-yellow); margin: 10px auto; }
         
-        .ingredient-card { background: white; border-radius: 20px; overflow: hidden; margin-bottom: 2.5rem; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border: 1px solid #eee; }
-        .ingredient-img { width: 100%; height: 220px; object-fit: cover; }
-        .ingredient-info { padding: 1.5rem; border-top: 5px solid var(--sushi-yellow); }
-        .ingredient-tag { background: var(--sushi-black); color: white; padding: 4px 12px; border-radius: 4px; font-weight: bold; font-size: 0.85rem; margin-bottom: 10px; display: inline-block; }
+        .card { background: white; border-radius: 20px; overflow: hidden; margin-bottom: 4rem; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border: 1px solid #eee; }
+        .card-img { width: 100%; height: 280px; object-fit: cover; }
+        .card-content { padding: 2.5rem; }
+        .card-content h3 { color: var(--sushi-red); font-size: 1.6rem; margin-top: 0; border-bottom: 2px solid var(--sushi-yellow); display: inline-block; padding-bottom: 5px; }
+        .card-content p { margin: 1.5rem 0; font-size: 1.05rem; color: #333; text-align: justify; }
         
-        /* 大喜利セクション */
-        .oogiri-box { background: white; border: 5px solid var(--sushi-red); border-radius: 25px; padding: 2.5rem; text-align: center; margin: 2rem 0; position: relative; box-shadow: 0 15px 40px rgba(217, 4, 41, 0.15); }
-        .oogiri-q { font-size: 1.5rem; font-weight: bold; color: var(--sushi-red); margin-bottom: 2rem; min-height: 80px; display: flex; align-items: center; justify-content: center; }
-        .btn-roulette { background: var(--sushi-red); color: white; border: none; padding: 15px 40px; border-radius: 50px; font-size: 1.2rem; cursor: pointer; transition: 0.3s; font-weight: bold; box-shadow: 0 4px 0 #900; }
+        .oogiri-box { background: white; border: 5px solid var(--sushi-red); border-radius: 25px; padding: 3rem 2rem; text-align: center; margin: 2rem 0; box-shadow: 0 15px 40px rgba(217, 4, 41, 0.15); }
+        .oogiri-q { font-size: 1.4rem; font-weight: bold; color: var(--sushi-red); margin-bottom: 2.5rem; min-height: 90px; display: flex; align-items: center; justify-content: center; line-height: 1.5; }
+        .btn-roulette { background: var(--sushi-red); color: white; border: none; padding: 18px 45px; border-radius: 50px; font-size: 1.2rem; cursor: pointer; transition: 0.3s; font-weight: bold; box-shadow: 0 4px 0 #900; }
         .btn-roulette:active { transform: translateY(4px); box-shadow: none; }
 
-        footer { text-align: center; padding: 4rem 2rem; background: #eee; margin-top: 4rem; color: #666; }
-        .btn-postit { display: inline-block; margin-top: 1rem; color: #d90429; font-weight: bold; text-decoration: none; border-bottom: 2px solid; }
+        footer { text-align: center; padding: 4rem 2rem; background: #eee; margin-top: 4rem; color: #666; font-size: 0.9rem; }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>🍣 恵方巻き×居場所会議</h1>
-    <p>今夜、理想の「場」を力いっぱい巻き上げろ！</p>
+    <h1>🚀 若者交流の場ディスカッション</h1>
+    <p>松本の「今」を知り、理想の「場」を語り合おう！</p>
 </header>
 
 <div class="container">
     
-    <h2 class="section-title">拠点を具材で解剖する</h2>
+    <h2 class="section-title">松本・交流拠点ガイド</h2>
 
-    <div class="ingredient-card">
-        <img src="southern-gaku.jpg" alt="サザンガク" class="ingredient-img">
-        <div class="ingredient-info">
-            <span class="ingredient-tag">具：ピリ辛キムチ</span>
-            <h3>サザンガク</h3>
-            <p>脳を刺激するカプサイシン！新しい挑戦や出会いがガツンとくる、イベント満載のエネルギッシュな拠点です！</p>
+    <div class="card">
+        <img src="southern-gaku.jpg" alt="サザンガク" class="card-img">
+        <div class="card-content">
+            <h3>サザンガク（松本市テレワーク拠点施設）</h3>
+            <p>松本駅から徒歩圏内にある、市内最大級のテレワーク拠点です。単なる「作業場所」に留まらず、学生や起業家が交差する刺激的な場となっています。最大の魅力は「交流コンシェルジュ」の存在。やりたいことがある学生と、面白いアイデアを求める企業を繋ぐ役割を担っています。高速Wi-Fiや電源完備といったハード面はもちろん、スキルアップ講座やキャリア相談会などのソフト面も充実。世代を超えた化学反応が日々生まれており、新しい一歩を踏み出したい若者にとって、これ以上ないほど心強いプラットフォームといえます。</p>
         </div>
     </div>
 
-    <div class="ingredient-card">
-        <img src="wakamono-sankaku.jpg" alt="若者参画課" class="ingredient-img">
-        <div class="ingredient-info">
-            <span class="ingredient-tag">具：ぷりぷり海老</span>
-            <h3>若者参画課</h3>
-            <p>松本の街を背負うメインディッシュ！君の「やりたい」を形にするための、最強のバックアップとリソースが詰まっています！</p>
+    <div class="card">
+        <img src="wakamono-sankaku.jpg" alt="若者参画課" class="card-img">
+        <div class="card-content">
+            <h3>若者参画課（松本市役所）</h3>
+            <p>松本市役所にある、若者の「やってみたい」を本気で応援する部署です。行政という枠組みを超え、若者が主役となって街を面白くするための並走支援を行っています。活動資金の助成や場所の提供、ネットワークの紹介など、具体的なバックアップ体制が整っているのが特徴です。「松本わかもの100人会議」などの対話イベントも主催しており、学生の声を直接市政に届ける架け橋としての役割も担っています。地域課題の解決やプロジェクト立ち上げの際に、真っ先に相談したい強力な味方といえる存在であり、若者の情熱を街の動力に変えてくれます。</p>
         </div>
     </div>
 
-    <div class="ingredient-card">
-        <img src="tankyu-lab.jpg" alt="KOKOラボ" class="ingredient-img">
-        <div class="ingredient-info">
-            <span class="ingredient-tag">具：ねばねば納豆</span>
-            <h3>KOKOラボ</h3>
-            <p>混ぜれば混ぜるほど（話せば話すほど）味が出る！学校でも家でもない、独特の距離感と粘り強い繋がりが生まれる秘密基地です！</p>
+    <div class="card">
+        <img src="tankyu-lab.jpg" alt="KOKOラボ" class="card-img">
+        <div class="card-content">
+            <h3>KOKOラボ（まつもと探究ラボ）</h3>
+            <p>中高生や大学生が、放課後や休日にふらっと立ち寄れる「街のサードプレイス」です。特別な目的がなくても、雑談や読書をしながら自由に過ごせる安心感が魅力です。ここでは、学校や家庭とは異なる「斜めの関係」の大人や先輩と出会うことができます。自分の「気になる」を深掘りする探究活動のサポートも行っており、誰かの目を気にせず自分をアップデートできる環境が整っています。年下の世代を支えるメンターとして大学生が関わる機会もあり、多世代がフラットに繋がり、学び合える貴重な拠点となっています。居場所を求める全ての若者に開かれています。</p>
         </div>
     </div>
 
-    <div class="ingredient-card">
-        <img src="sweetwork.jpg" alt="スイートワーク" class="ingredient-img">
-        <div class="ingredient-info">
-            <span class="ingredient-tag">具：とろ〜りクリームチーズ</span>
-            <h3>スイートワーク</h3>
-            <p>パンの香りに包まれる至福のコク！どんな尖った意見もまろやかに受け止めてくれる、アットホームで開放的な交流拠点です！</p>
+    <div class="card">
+        <img src="sweetwork.jpg" alt="スイートワーク" class="card-img">
+        <div class="card-content">
+            <h3>スイートワーク（SWEET WORK）</h3>
+            <p>地元で愛されるパン屋「スイート」が運営する、木のぬくもり溢れるワークスペースです。1階から漂う焼きたてパンの香りとリラックスした雰囲気が、創造的な思考を活性化させてくれます。ガチガチのビジネス空間ではないため、初対面同士でも自然と会話が生まれやすいのが最大の利点です。靴を脱いでくつろげるスペースもあり、まるで誰かの家で話しているようなアットホームな空気感の中で交流が楽しめます。地域を面白くしたい大人と感性豊かな若者が、美味しいものを囲みながらフラットに未来を語り合える温かい拠点として、多くの人に親しまれています。</p>
         </div>
     </div>
 
     <h2 class="section-title">場作りハック大喜利</h2>
     <div class="oogiri-box">
-        <div id="oogiri-display" class="oogiri-q">ボタンを叩いて、本音を爆発させろ！</div>
+        <div id="oogiri-display" class="oogiri-q">ボタンを叩いて、ネタを拾おう！</div>
         <button class="btn-roulette" onclick="spinRoulette()">次のお題を出す！</button>
-        <p><a href="#" class="btn-postit">面白い回答はポストイットへ！📝</a></p>
+        <p style="font-size: 0.9rem; margin-top: 1.5rem; color: #666;">※面白い回答はポストイットに書いて画用紙へ！</p>
     </div>
 
 </div>
 
 <footer>
     <p>&copy; 2026 若者交流の場づくりプロジェクト</p>
-    <p style="font-size: 0.8rem;">信州大学 繊維学部 某プロジェクトチーム 監修</p>
+    <p>信州大学 繊維学部 プロジェクトチーム</p>
 </footer>
 
 <script>
     const questions = [
-        "入館料が「スマホ没収」。それなのに若者が殺到！中で行われている『最高の交流』とは？",
-        "「大人の意見は完全スルーOK」の部屋。若者たちがコッソリ進めている『ヤバい計画』は？",
-        "入口で「自分の黒歴史」バッジを装着するルール。なぜか会話が爆発する、その理由は？",
-        "24時間「寝るだけ」でも怒られない、だらしない場所。そこで生まれた『ガチのアイデア』とは？",
-        "市役所に設置された『叫びの壺』。若者の不満が爆発して、ついに完成した『理想の機能』は？",
-        "「一流のプロだけが入れる場所」ではなく、「一流の失敗談を持つ人だけが入れる場所」。そこで何が起きた？",
-        "恵方巻きの具材に『今の街に足りない要素』を1つ足すなら？（例：爆速Wi-Fi、深夜まで開いてる扉…）"
+        "入館料が「スマホの電源を切ること」。それなのに若者が殺到！スマホを捨ててまで手に入れたい交流とは？",
+        "地下に「大人の愚痴」を燃料に動く巨大ロボットが。若者がそのボタンを押したくなるのはどんな時？",
+        "入口で「自分の弱点」をカードに書いて胸に貼るルール。その結果、会場の空気はどう変わった？",
+        "「一言でも嘘をつくと床が抜ける」部屋。最後に残った二人が交わしていた究極の会話は？",
+        "10分入るだけで「嫌な記憶が1つ消える」箱。若者が記憶を消さずに笑顔で出てきた理由とは？",
+        "会員資格は「大人に絶望していること」。地下にある『秘密のスイッチ』。押すと街の何が変わる？",
+        "「大人の意見は完全スルーOK」の部屋。若者たちがコッソリ進めているヤバい計画とは？",
+        "「Wi-Fi完備」のさらに上を行く、現代の若者が喉から手が出るほど欲しい「〇〇完備」とは？"
     ];
 
     function spinRoulette() {
